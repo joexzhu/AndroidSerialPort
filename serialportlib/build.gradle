@@ -57,6 +57,7 @@ dependencies {
 //}
 
 //for upload
+/* !! Cause project build failure !!
 apply plugin: 'com.novoda.bintray-release'
 publish {
     userOrg = 'deemons' //注册的用户名
@@ -66,3 +67,4 @@ publish {
     desc = 'android serialport'//描述
     website = 'https://github.com/Deemonser/AndroidSerialPort'//项目地址
 }
+*/

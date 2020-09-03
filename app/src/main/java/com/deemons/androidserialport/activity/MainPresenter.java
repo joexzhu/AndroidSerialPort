@@ -69,7 +69,7 @@ public class MainPresenter implements MainContract.IPresenter {
         isHexSend = SPUtils.getInstance().getBoolean(SPKey.SETTING_SEND_TYPE, true);
         isShowSend = SPUtils.getInstance().getBoolean(SPKey.SETTING_RECEIVE_SHOW_SEND, true);
         isShowTime = SPUtils.getInstance().getBoolean(SPKey.SETTING_RECEIVE_SHOW_TIME, true);
-        mRepeatDuring = SPUtils.getInstance().getInt(SPKey.SETTING_RECEIVE_TYPE, 1000);
+        mRepeatDuring = SPUtils.getInstance().getInt(SPKey.SETTING_SEND_DURING, 1000);
 
         try {
             mSendHistory = (LinkedHashSet<String>) SPUtils.getInstance()

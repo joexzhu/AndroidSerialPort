@@ -28,9 +28,10 @@ public class SerialPortFinder {
         public Vector<File> getDevices() {
             if (mDevices == null) {
                 mDevices = new Vector<File>();
-                File dev = new File("/dev");
+                File dev = new File("/dev/ttyS1");
 
-                File[] files = dev.listFiles();
+                File[] files = new File[1]; //dev.listFiles();
+                files[0] = dev;
 
                 if (files != null) {
                     int i;
